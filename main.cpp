@@ -5,8 +5,7 @@
 
 int main(void)
 {
-
-	RoboEvaluator robotTest = RoboEvaluator();
+	RoboEvaluator robotTest;
 	RoboGeneration robotContainer = RoboGeneration(Terminator);
 	GA geneticAlgorithm = GA(robotTest, robotContainer);
 	geneticAlgorithm.start(1000);
